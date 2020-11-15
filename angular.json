@@ -119,6 +119,15 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular10-primeng"
+    }
+  },
+  "defaultProject": "angular10-primeng",
+  "schematics": {
+    "@schematics/angular:component": {
+      "skipTests": true
+    },
+    "@schematics/angular:service": {
+      "skipTests": true
+    }
+  }
 }
