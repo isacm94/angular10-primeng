@@ -9,6 +9,14 @@ import { BooksService } from 'src/app/services/books.service';
 export class BooksComponent implements OnInit {
   books: any[];
 
+  cols = [
+    { field: 'id', header: 'ID' },
+    { field: 'title', header: 'Título' },
+    { field: 'author', header: 'Autor' },
+    { field: 'type', header: 'Tipo' },
+    { field: 'number_of_pages', header: 'Número de páginas' }
+  ];
+
   constructor(private booksService: BooksService) { }
 
   ngOnInit(): void {

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BooksComponent } from './components/books/books.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TableModule } from 'primeng/table';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TableModule } from 'primeng/table';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    CardModule,
     TableModule
   ],
   providers: [],
